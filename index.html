@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Campo Minado</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>Campo Minado</h1>
+      <nav class="levels" id="levels">
+        <button data-level="beginner" class="active">Iniciante</button>
+        <button data-level="intermediate">Intermediário</button>
+        <button data-level="expert">Especialista</button>
+      </nav>
+    </header>
+
+    <section class="panel">
+      <div class="counter" id="mines">010</div>
+      <button class="face" id="face" title="Novo jogo">🙂</button>
+      <div class="counter" id="timer">000</div>
+    </section>
+
+    <section class="board-wrap">
+      <div class="board" id="board"></div>
+    </section>
+
+    <footer class="foot">
+      <button id="flag-mode" class="toggle" title="Alternar entre revelar e marcar">🚩 Modo bandeira: <strong>off</strong></button>
+      <p class="hint">Clique revela · botão direito ou toque longo marca · clique em número revela vizinhos</p>
+      <p class="best" id="best"></p>
+    </footer>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/board.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
